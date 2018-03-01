@@ -31,7 +31,7 @@ shinyUI(fluidPage(
                          label = h6("Fees paid by the GTFF (in $)"),
                          value = 189),
             numericInput("fees_asked",
-                         label = h6("Fees requested by [whom?] (in $)"),
+                         label = h6("Fees requested by University (in $)"),
                          value = 2076),
             br(),
             br(),            
@@ -76,17 +76,17 @@ shinyUI(fluidPage(
                     helpText("This application calculates savings for full and fair share members based on their monthly salary."),
                     HTML("<u><b>Equations for calculation: </b></u>
                         <br> </br>
-                        <br> D = P * M </br>
+                        <br> D = M * P </br>
                         <br> C = D + H </br>
-                        <br> S = ??? <br>
+                        <br> S = C - D <br>
                         
                         <br> </br>
                         
                         <b>key: </b><br>
-                        D = Dues paid (per year) <br>
+                        D = Dues paid per year (in dollars) <br>
                         M = Monthly salary <br>
                         P = Membership dues paid (% of salary; full or fair) <br>
-                        C = Total cost <br>
+                        C = Total cost to member per year (with or without union) <br>
                         H = Health insurance (GTFF, ACA, or UO) <br>
                         S = Savings
 

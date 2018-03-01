@@ -99,7 +99,7 @@ shinyServer(function(input, output) {
     output$text_cost_noGTFF <- renderText({
         if(input$action_Calc == 0) ""
         else
-            paste("Total Cost No UO [$]:", cost_noGTFF())
+            paste("Total Cost No UO Union [$]:", cost_noGTFF())
     })
     output$text_savings_ACA_full <- renderText({
         if(input$action_Calc == 0) ""
